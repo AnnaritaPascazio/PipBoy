@@ -104,3 +104,19 @@ position: relative;
 .nav-tabs {
   font-size: 22px;
 }
+
+.nav .nav.tabs{
+  margin: 20px;
+  border-bottom:none;
+}
+
+.pip-footer{
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 20px);
+  margin: 10px;
+}
+
+.nav.nav-tabs > .nav-item > .nav-link:hover{
+border:1px solid transparent;
+}

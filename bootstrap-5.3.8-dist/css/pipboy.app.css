@@ -1,3 +1,21 @@
+body{
+    color: #14fe17;
+    background: #272b23 ;
+}
+
+ul> li.nav-item > a.nav-link, ul > li.nav-item.active > a.nav.link {
+    color: #14fe17 !important;
+}
+
+.img {
+    margin:auto;
+    display: block;
+    position: relative;
+    max-height: 100px;
+    margin-top:100px;
+    filter:grayscale(1) sepia(100%) hue-rotate(55deg) saturate(7) brightness(10);
+}
+
 .navbar .navbar light{
     position:fixed;
     bottom:0;
@@ -7,7 +25,7 @@
 .pip-boy{
   display: block;
   margin: 10px auto;
-  width: 110%;
+  width: 100%;
 }
 
 .pip-footer{

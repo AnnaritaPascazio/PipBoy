@@ -1,36 +1,90 @@
-body{
-    color: #14fe17;
-    background: #272b23 ;
+@font-face {
+    font-family: PipBoy;
+    src: url(../monofonto\ rg.otf);
 }
 
-ul> li.nav-item > a.nav-link, ul > li.nav-item.active > a.nav.link {
-    color: #14fe17 !important;
+
+body {
+  color: #14fe17;
+  background: #272b23;
+  font-family: monofonto;
 }
 
-.img {
-    margin:auto;
-    display: block;
-    position: relative;
-    max-height: 100px;
-    margin-top:100px;
-    filter:grayscale(1) sepia(100%) hue-rotate(55deg) saturate(7) brightness(10);
+body::after{
+    height:100px;
+    width:100px;
+    content:"";
+    position: absolute;
+    top:0px;
+    left: 0px;
+    background: repeating-linear-gradient(0deg, rgba(0,0,0,.5)1px, rgba(0,0,0,.4)1px,transparent 1px);
 }
 
-.navbar .navbar light{
-    position:fixed;
-    bottom:0;
-    width:100%;
+
+.navbar {
+  border-bottom: 2px solid;
+  margin: 0px 10px;
+  background-color: #272b23;
+  text-align: center;
+  position: fixed; /* moved to top if desired */
+  width: calc(100% - 20px);
+  /* Remove previous bottom-fixed code if repositioning */
 }
 
-.pip-boy{
+.navbar::before,
+.navbar::after {
+  height: 5px;
+  width: 2px;
+  content: "";
+  position: absolute;
   display: block;
-  margin: 10px auto;
-  width: 100%;
+  z-index: 5000;
+  background-color: #14fe17;
+  bottom: -8px;
 }
 
-.pip-footer{
-    position:fixed;
-    bottom:0;
-    width:calc(100% - 20px);
-    margin: 10px;
+.navbar::before {
+  left: 0px;
+}
+
+.navbar::after {
+  right: 0px;
+}
+
+ul > li.nav-item > a.nav-link,
+ul > li.nav-item.active > a.nav-link {
+  color: #14fe17 !important;
+  width: 50%;
+  margin:auto;
+}
+
+/*  Center the navbar links  */
+.navbar .navbar-collapse {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar .navbar-nav {
+  margin: 0;
+}
+
+.navbar .navbar-nav > .nav-item {
+  display: inline-block;
+}
+
+/* Remaining styling */
+.img {
+  margin: auto;
+  display: block;
+  position: relative;
+  max-height: 450px;
+  margin-top: 70px;
+  filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(7) brightness(10);
+}
+
+.pip-footer {
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 20px);
+  margin: 10px;
 }

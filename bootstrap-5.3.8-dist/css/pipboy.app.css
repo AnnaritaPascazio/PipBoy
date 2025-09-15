@@ -116,10 +116,11 @@ left: 0px;
 }
 
 .pip-footer{
-  position: fixed;
-  bottom: 0;
-  width: calc(100% - 20px);
-  margin: 10px;
+  background: #222;
+  color: #0f0;
+  padding: 10px 0;
+  font-family: monospace;
+  font-size: 0.9rem;
 }
 
 .nav.nav-tabs > .nav-item > .nav-link:hover{
@@ -149,11 +150,12 @@ border:1px solid transparent;
 }
 
 .level-progress{
-  width: 100%;
-  height: 10px;
-  border:2px solid;
-  display : inline-block;
-  width: 70%;
+      background: #444;
+      height: 8px;
+      margin-top: 5px;
+      position: relative;
+      border-radius: 4px;
+      overflow: hidden;
 }
 
 .level-progress-indicator{
@@ -176,3 +178,15 @@ color:black;
 margin:3px 5px;
 
 }
+
+
+    .pipboy-tabs img {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 0 auto;
+    }
+    
+    .pip-footer .col-3, .pip-footer .col-6 {
+      text-align: center;
+    }

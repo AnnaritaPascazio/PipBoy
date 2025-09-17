@@ -190,3 +190,9 @@ margin:3px 5px;
     .pip-footer .col-3, .pip-footer .col-6 {
       text-align: center;
     }
+
+.stat-bar{
+  width: 60px;
+  margin:auto;
+  background:#14fe17;
+}
